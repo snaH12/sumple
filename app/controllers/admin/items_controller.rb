@@ -2,7 +2,7 @@ class Admin::ItemsController < ApplicationController
   
   def index
     #ページネーションの使用
-    @item = Item.page(params[:page])
+    @items = Item.page(params[:page])
   end
 
   def new
@@ -15,7 +15,7 @@ class Admin::ItemsController < ApplicationController
       redirect_to admin_item_path(@item), notice: "You have created item successfully."
     else
       render :new
-　   end
+    end
   end
 
   def show

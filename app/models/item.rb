@@ -1,7 +1,7 @@
 class Item < ApplicationRecord
-　#ジャンルに属する
-　belongs_to :genre
-　#カートアイテムをたくさん持っている
+#ジャンルに属する
+ belongs_to :genre
+#カートアイテムをたくさん持っている
   has_many :cart_items, dependent: :destroy
   #注文詳細をたくさん持つ（注文詳細にはアイテム）
   has_many :order_details

@@ -20,7 +20,7 @@ class Public::SessionsController < Devise::SessionsController
 
   
   protected
-　# 退会しているかを判断するメソッド
+  # 退会しているかを判断するメソッド
   def customer_state
     #find_by:IDをもとに検索を行うfind メソッドに対し、ID 以外のカラムからも検索を行い該当する1件を取得するメソッド
     ##入力されたemailからアカウントを1件取得
